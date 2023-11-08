@@ -2,8 +2,8 @@ import { error } from '@sveltejs/kit';
 // import db from database;
 import { env } from '$env/dynamic/private';
 
-import { DynamoDBClient, ListTablesCommand, QueryCommand } from '@aws-sdk/client-dynamodb'; // ES6 import
-import { GetCommand, ScanCommand } from '@aws-sdk/lib-dynamodb';
+import { DynamoDBClient } from '@aws-sdk/client-dynamodb'; // ES6 import
+import { GetCommand } from '@aws-sdk/lib-dynamodb';
 
 // console.log('env', env);
 
