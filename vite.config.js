@@ -2,8 +2,6 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vitest/config';
 import path from 'path';
 
-
-
 export default defineConfig({
 	plugins: [sveltekit()],
 	test: {
@@ -12,7 +10,12 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			'./runtimeConfig': './runtimeConfig.browser',
-			"@": path.resolve(__dirname, "./src"),
+			'@': path.resolve(__dirname, './src')
+		}
+	},
+	build: {
+		rollupOptions: {
+			external: ['@aws-sdk/client-dynamodb']
 		}
 	}
 });
