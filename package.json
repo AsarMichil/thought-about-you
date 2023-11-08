@@ -39,7 +39,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@aws-sdk/lib-dynamodb": "^3.444.0",
+		"@aws-sdk/lib-dynamodb": "latest",
 		"aws-sdk": "^2.1490.0"
 	}
 }
