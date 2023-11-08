@@ -1,6 +1,7 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vitest/config';
-import { fileURLToPath, URL } from "url";
+import path from 'path';
+
 
 
 export default defineConfig({
@@ -11,7 +12,7 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			'./runtimeConfig': './runtimeConfig.browser',
-			'@': fileURLToPath(new URL('./src', import.meta.url))
+			"@": path.resolve(__dirname, "./src"),
 		}
 	}
 });
