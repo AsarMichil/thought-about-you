@@ -6,7 +6,7 @@
 	import './styles.css';
 
 	/** @type {import('./$types').LayoutServerData} */
-	export let data;
+	export let data;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 
 	$: if (browser && data?.analyticsId) {
 		webVitals({
