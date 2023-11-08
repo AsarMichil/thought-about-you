@@ -6,7 +6,7 @@ settings:
 
 dependencies:
   '@aws-sdk/lib-dynamodb':
-    specifier: ^3.444.0
+    specifier: latest
     version: 3.445.0(@aws-sdk/client-dynamodb@3.445.0)
   aws-sdk:
     specifier: ^2.1490.0
